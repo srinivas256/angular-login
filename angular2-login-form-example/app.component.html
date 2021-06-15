@@ -1,0 +1,32 @@
+<!--hello name="{{ name }}"></hello>
+<p>
+  Welcome child Branch :)
+</p-->
+<div class="container">
+  <div *ngIf="formHide" class="row">
+  <div class="form-group">
+    <label for="email">EMail</label>
+    <input type="email" class="form-control" [(ngModel)]="name" id="email" placeholder="Pleast enter email" name="email"/>
+  </div>
+
+   <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" [(ngModel)]="pwd" id="pwd" placeholder="Please enter password" name="pwd"/>
+    </div>
+
+
+<div class="form-group checkbox">
+<label>  <input type="checkbox" name="remember"/>Remember Passwords</label>
+
+ <br>
+  <button (click)="getUserDetails()" type="submit" class="btn btn-default">Log In</button>
+   </div>
+</div>
+
+<div *ngIf = "formHide" class="row">
+  <h1> welcome To {{name}}</h1>
+  </div>
+    
+
+  </div>
+
